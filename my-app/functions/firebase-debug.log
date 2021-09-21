@@ -1,0 +1,87 @@
+[debug] [2021-09-21T16:40:16.048Z] ----------------------------------------------------------------------
+[debug] [2021-09-21T16:40:16.049Z] Command:       /Users/deniskadrich/.nvm/versions/node/v15.14.0/bin/node /Users/deniskadrich/.nvm/versions/node/v15.14.0/bin/firebase functions:shell
+[debug] [2021-09-21T16:40:16.049Z] CLI Version:   9.18.0
+[debug] [2021-09-21T16:40:16.050Z] Platform:      darwin
+[debug] [2021-09-21T16:40:16.050Z] Node Version:  v15.14.0
+[debug] [2021-09-21T16:40:16.050Z] Time:          Tue Sep 21 2021 12:40:16 GMT-0400 (Eastern Daylight Time)
+[debug] [2021-09-21T16:40:16.050Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-09-21T16:40:16.089Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-09-21T16:40:16.089Z] > authorizing via signed-in user (deniskadrich69@gmail.com)
+[debug] [2021-09-21T16:40:16.089Z] [iam] checking project netflix-clone-262a7 for permissions ["firebase.projects.get"]
+[debug] [2021-09-21T16:40:16.090Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-09-21T16:40:16.091Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-21T16:40:16.204Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Tue, 21 Sep 2021 16:40:16 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-21T16:40:16.265Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-clone-262a7:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-09-21T16:40:16.425Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 21 Sep 2021 16:40:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=128","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] ⚠  Your requested "node" version "14" doesn't match your global version "15" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"14\" doesn't match your global version \"15\""}}
+[debug] [2021-09-21T16:40:16.440Z] defaultcredentials: writing to file /Users/deniskadrich/.config/firebase/deniskadrich69_gmail_com_application_default_credentials.json
+[debug] [2021-09-21T16:40:16.441Z] DEBUG: Setting GAC to /Users/deniskadrich/.config/firebase/deniskadrich69_gmail_com_application_default_credentials.json
+[debug] [2021-09-21T16:40:16.442Z] > refreshing access token with scopes: []
+[debug] [2021-09-21T16:40:16.442Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-21T16:40:16.505Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 21 Sep 2021 16:40:16 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-21T16:40:16.555Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-262a7/adminSdkConfig [none]
+[debug] [2021-09-21T16:40:16.939Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-262a7/adminSdkConfig 200
+[debug] [2021-09-21T16:40:16.939Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-clone-262a7/adminSdkConfig {"projectId":"netflix-clone-262a7","storageBucket":"netflix-clone-262a7.appspot.com"}
+[debug] [2021-09-21T16:40:16.969Z] [functions] Watching "/Users/deniskadrich/Development/code/Mod5/netflix_clone/my-app/functions" for Cloud Functions...
+[debug] [2021-09-21T16:40:16.974Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-09-21T16:40:16.974Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2021-09-21T16:40:16.974Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-09-21T16:40:16.974Z] DEBUG: [worker-~diagnostic~-afae57e9-2b78-4639-826c-15adc93f85d7]: Assigning socketPath: /var/folders/f9/jx3f49ln5w19xxrz3zy8jxd40000gn/T/fire_emu_32179.sock
+[debug] [2021-09-21T16:40:16.974Z] DEBUG: [worker-~diagnostic~-afae57e9-2b78-4639-826c-15adc93f85d7]: BUSY
+[info] >  Debugger attached. {"user":"Debugger attached.","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m Debugger attached."}}
+[debug] [2021-09-21T16:40:17.293Z] DEBUG: [runtime-status] [32179] Functions runtime initialized. {"cwd":"/Users/deniskadrich/Development/code/Mod5/netflix_clone/my-app/functions","node_version":"15.14.0"}
+[debug] [2021-09-21T16:40:17.294Z] DEBUG: [runtime-status] [32179] Disabled runtime features: undefined
+[warn] ⚠  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory. {"metadata":{"emulator":{"name":"functions"},"message":"The Cloud Functions emulator requires the module \"firebase-admin\" to be installed. This package is in your package.json, but it's not available. You probably need to run \"npm install\" in your functions directory."}}
+[debug] [2021-09-21T16:40:17.296Z] [functions] Your functions could not be parsed due to an issue with your node_modules (see above)
+[info] >  Waiting for the debugger to disconnect... {"user":"Waiting for the debugger to disconnect...","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m Waiting for the debugger to disconnect..."}}
+[debug] [2021-09-21T16:40:17.316Z] DEBUG: [worker-~diagnostic~-afae57e9-2b78-4639-826c-15adc93f85d7]: exited
+[debug] [2021-09-21T16:40:17.316Z] DEBUG: [worker-~diagnostic~-afae57e9-2b78-4639-826c-15adc93f85d7]: FINISHED
+[debug] [2021-09-21T16:42:01.984Z] DEBUG: File /Users/deniskadrich/Development/code/Mod5/netflix_clone/my-app/functions/package.json changed, reloading triggers
+[debug] [2021-09-21T16:42:02.985Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2021-09-21T16:42:02.989Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-09-21T16:42:02.989Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2021-09-21T16:42:02.989Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-09-21T16:42:02.989Z] DEBUG: [worker-~diagnostic~-63941687-4fb5-4e04-a08c-f562773f982c]: Assigning socketPath: /var/folders/f9/jx3f49ln5w19xxrz3zy8jxd40000gn/T/fire_emu_33152.sock
+[debug] [2021-09-21T16:42:02.989Z] DEBUG: [worker-~diagnostic~-63941687-4fb5-4e04-a08c-f562773f982c]: BUSY
+[info] >  Debugger attached. {"user":"Debugger attached.","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m Debugger attached."}}
+[debug] [2021-09-21T16:42:03.479Z] DEBUG: [runtime-status] [33152] Functions runtime initialized. {"cwd":"/Users/deniskadrich/Development/code/Mod5/netflix_clone/my-app/functions","node_version":"15.14.0"}
+[debug] [2021-09-21T16:42:03.480Z] DEBUG: [runtime-status] [33152] Disabled runtime features: undefined
+[warn] ⚠  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory. {"metadata":{"emulator":{"name":"functions"},"message":"The Cloud Functions emulator requires the module \"firebase-admin\" to be installed. This package is in your package.json, but it's not available. You probably need to run \"npm install\" in your functions directory."}}
+[debug] [2021-09-21T16:42:03.482Z] [functions] Your functions could not be parsed due to an issue with your node_modules (see above)
+[info] >  Waiting for the debugger to disconnect... {"user":"Waiting for the debugger to disconnect...","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m Waiting for the debugger to disconnect..."}}
+[debug] [2021-09-21T16:42:03.501Z] DEBUG: [worker-~diagnostic~-63941687-4fb5-4e04-a08c-f562773f982c]: exited
+[debug] [2021-09-21T16:42:03.501Z] DEBUG: [worker-~diagnostic~-63941687-4fb5-4e04-a08c-f562773f982c]: FINISHED
+[debug] [2021-09-21T16:42:25.114Z] DEBUG: File /Users/deniskadrich/Development/code/Mod5/netflix_clone/my-app/functions/package.json changed, reloading triggers
+[debug] [2021-09-21T16:42:26.115Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2021-09-21T16:42:26.120Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-09-21T16:42:26.120Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2021-09-21T16:42:26.120Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-09-21T16:42:26.120Z] DEBUG: [worker-~diagnostic~-59be126a-b633-46b1-b5bd-9de0da598dda]: Assigning socketPath: /var/folders/f9/jx3f49ln5w19xxrz3zy8jxd40000gn/T/fire_emu_33192.sock
+[debug] [2021-09-21T16:42:26.120Z] DEBUG: [worker-~diagnostic~-59be126a-b633-46b1-b5bd-9de0da598dda]: BUSY
+[info] >  Debugger attached. {"user":"Debugger attached.","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m Debugger attached."}}
+[debug] [2021-09-21T16:42:26.458Z] DEBUG: [runtime-status] [33192] Functions runtime initialized. {"cwd":"/Users/deniskadrich/Development/code/Mod5/netflix_clone/my-app/functions","node_version":"15.14.0"}
+[debug] [2021-09-21T16:42:26.459Z] DEBUG: [runtime-status] [33192] Disabled runtime features: undefined
+[warn] ⚠  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory. {"metadata":{"emulator":{"name":"functions"},"message":"The Cloud Functions emulator requires the module \"firebase-admin\" to be installed. This package is in your package.json, but it's not available. You probably need to run \"npm install\" in your functions directory."}}
+[debug] [2021-09-21T16:42:26.460Z] [functions] Your functions could not be parsed due to an issue with your node_modules (see above)
+[info] >  Waiting for the debugger to disconnect... {"user":"Waiting for the debugger to disconnect...","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m Waiting for the debugger to disconnect..."}}
+[debug] [2021-09-21T16:42:26.480Z] DEBUG: [worker-~diagnostic~-59be126a-b633-46b1-b5bd-9de0da598dda]: exited
+[debug] [2021-09-21T16:42:26.481Z] DEBUG: [worker-~diagnostic~-59be126a-b633-46b1-b5bd-9de0da598dda]: FINISHED
+[debug] [2021-09-21T16:42:27.475Z] DEBUG: File /Users/deniskadrich/Development/code/Mod5/netflix_clone/my-app/functions/package.json changed, reloading triggers
+[debug] [2021-09-21T16:42:28.478Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2021-09-21T16:42:28.482Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-09-21T16:42:28.482Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2021-09-21T16:42:28.482Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-09-21T16:42:28.482Z] DEBUG: [worker-~diagnostic~-e83db0c4-c7fd-458e-99a5-accbb6b22d9c]: Assigning socketPath: /var/folders/f9/jx3f49ln5w19xxrz3zy8jxd40000gn/T/fire_emu_33202.sock
+[debug] [2021-09-21T16:42:28.482Z] DEBUG: [worker-~diagnostic~-e83db0c4-c7fd-458e-99a5-accbb6b22d9c]: BUSY
+[info] >  Debugger attached. {"user":"Debugger attached.","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m Debugger attached."}}
+[debug] [2021-09-21T16:42:28.788Z] DEBUG: [runtime-status] [33202] Functions runtime initialized. {"cwd":"/Users/deniskadrich/Development/code/Mod5/netflix_clone/my-app/functions","node_version":"15.14.0"}
+[debug] [2021-09-21T16:42:28.789Z] DEBUG: [runtime-status] [33202] Disabled runtime features: undefined
+[warn] ⚠  The Cloud Functions emulator requires the module "firebase-admin" to be installed. This package is in your package.json, but it's not available. You probably need to run "npm install" in your functions directory. {"metadata":{"emulator":{"name":"functions"},"message":"The Cloud Functions emulator requires the module \"firebase-admin\" to be installed. This package is in your package.json, but it's not available. You probably need to run \"npm install\" in your functions directory."}}
+[debug] [2021-09-21T16:42:28.790Z] [functions] Your functions could not be parsed due to an issue with your node_modules (see above)
+[info] >  Waiting for the debugger to disconnect... {"user":"Waiting for the debugger to disconnect...","metadata":{"emulator":{"name":"functions"},"message":"\u001b[90m> \u001b[39m Waiting for the debugger to disconnect..."}}
+[debug] [2021-09-21T16:42:28.809Z] DEBUG: [worker-~diagnostic~-e83db0c4-c7fd-458e-99a5-accbb6b22d9c]: exited
+[debug] [2021-09-21T16:42:28.809Z] DEBUG: [worker-~diagnostic~-e83db0c4-c7fd-458e-99a5-accbb6b22d9c]: FINISHED
